@@ -22,8 +22,17 @@
     f.setAttribute('style', "margin-left: 2em;");
     f.addEventListener("click", function(){
         for(var i=1; i<=5; i++) {
-            document.getElementsByClassName('hoursWorked')[i].children[0].value = 7;
-            document.getElementsByClassName('hoursWorked')[i].children[2].value = 30;
+            var classes = document.getElementsByClassName('hoursWorked')[i].classList;
+            var nonWorkingDay = false;
+            for (var j=0; j<=classes.length; j++) {
+                if(classes[j] == "nonWorkingDay") {
+                   nonWorkingDay = true;
+                }
+            }
+            if(!nonWorkingDay) {
+                document.getElementsByClassName('hoursWorked')[i].children[0].value = 7;
+                document.getElementsByClassName('hoursWorked')[i].children[2].value = 30;
+            }
         }
     });
     h.appendChild(f);
