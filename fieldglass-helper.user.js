@@ -4,7 +4,9 @@
 // @description  Adds options to complete or reset the billable hours in your Fieldglass timesheet
 // @copyright    2019, floodmeadows (https://openuserjs.org/users/floodmeadows)
 // @license      MIT
-// @version      0.3.1
+// @version      0.3.2
+// @updateURL    https://openuserjs.org/meta/floodmeadows/Fieldglass_completion_helper.meta.js
+// @downloadURL  https://openuserjs.org/src/scripts/username/Fieldglass_completion_helper.user.js
 // @include      https://www.fieldglass.net/rate_schedule_time_sheet_form.do*
 // @grant        none
 // ==/UserScript==
