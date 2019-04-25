@@ -17,7 +17,7 @@
     'use strict';
     var h = document.getElementsByClassName('billableHeader')[0].children[0];
     var f = document.createElement('a');
-    f.textContent = "[ Fill Mon-Fri with 7:30 ]";
+    f.textContent = "[ Fill working days with 7:30 ]";
     f.setAttribute('href', '#');
     f.setAttribute('style', "margin-left: 2em;");
     f.addEventListener("click", function(){
